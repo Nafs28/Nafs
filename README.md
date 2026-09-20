@@ -125,32 +125,6 @@ function formatRupiah(float $angka): string {
 }
 
 3. index.php (Presentation Layer)
-<?php
-// index.php - Presentation Layer
-require_once __DIR__ . '/products.php';
-require_once __DIR__ . '/functions.php';
-
-$totalNilaiGudang = hitungTotalNilaiStok($products);
-?>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Manajemen Produk Gudang</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 30px; background-color: #f8fafc; color: #1e293b; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e2e8f0; }
-        th { background: #0f172a; color: white; }
-        .row-critical { background-color: #fee2e2; color: #991b1b; font-weight: 500; }
-        .row-normal { background-color: #ffffff; }
-        .badge-danger { background-color: #ef4444; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; }
-    </style>
-</head>
-<body>
-
     <h1>📦 Sistem Inventaris Produk</h1>
     
     <div class="card">
